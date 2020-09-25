@@ -1,3 +1,4 @@
+arch: ppc64le
 dist: trusty
 language: c
 
@@ -5,7 +6,7 @@ script:
  - ./configure --pam=1 --ldap=1
  - make check
  - dpkg-buildpackage -uc -us -b
-arch: ppl64le
+
 
 env:
   global:
